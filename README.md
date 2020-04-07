@@ -1,4 +1,4 @@
-# BrWorks :shipit:
+# BrWorks
 
 ## This project aims to help the Brazilian community in Australia.
 
@@ -16,13 +16,9 @@
 * [SCSS]
 
 
-## Access app-brworks
-```
-cd app-brworks
-```
-
 ## Project setup
 ```
+cd app-brworks
 npm install
 ```
 
