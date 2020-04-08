@@ -2,14 +2,6 @@
 
 ## This project aims to help the Brazilian community in Australia.
 
-## First round 
-- [ ] NavBar - *in progress*
-- [ ] SideBar 
-- [ ] ContentBlock
-- [ ] JobCards
-
-
-
 
 ## Built With
 * [Vue.Js]
