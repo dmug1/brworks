@@ -1,7 +1,7 @@
 <template>
-   <div id="MainBlock">
-       <SideBar/>
-       <ContentBlock/>
+   <div id="MainBlock" class="row">
+       <SideBar class="col-1-of-4"/>
+       <ContentBlock class="col-3-of-4"/>
    </div>
 </template>
 

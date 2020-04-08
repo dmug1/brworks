@@ -13,5 +13,14 @@
 
 @import "layout/header";
 @import "layout/grid";
+@import "layout/mainblock";
 
 
+
+/*
+JUST FOR MOCK PURPOSES
+REMOVE ON LATE STAGES
+*/
+[class^="col-"]{
+    border:1px solid orangered;
+}
