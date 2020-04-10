@@ -1,12 +1,7 @@
 <template>
   <v-app-bar app color="primary" dark>
     <div class="d-flex align-center">
-      <v-btn
-        class="shrink mr-2"
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
+      <v-btn class="shrink mr-2" href="#" text>
         <v-img
           alt="Vuetify Logo"
           contain
@@ -26,11 +21,7 @@
       class="hidden-sm-and-down"
     />
 
-    <v-btn
-      href="https://github.com/vuetifyjs/vuetify/releases/latest"
-      target="_blank"
-      text
-    >
+    <v-btn href="#" text>
       <span class="mr-2">Login</span>
     </v-btn>
   </v-app-bar>
