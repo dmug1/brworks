@@ -1,25 +1,30 @@
 <template>
-  <div id="app">
-       <NavBar/>
-       <MainBlock/>
-  </div>
+  <v-app>
+    <NavBar />
+    <v-content>
+      <MainBlock />
+    </v-content>
+  </v-app>
 </template>
 
 <script>
-import NavBar from './components/NavBar.vue'
-import MainBlock from './components/MainBlock.vue'
+import NavBar from "./components/NavBar.vue";
+import MainBlock from "./components/MainBlock.vue";
 
 export default {
-  name: 'App',
+  name: "App",
+
   components: {
     NavBar,
     MainBlock
-  }
-}
+  },
+
+  data: () => ({
+    //
+  })
+};
 </script>
-
 <style lang="scss">
-
 @import "./styles/main.scss";
 
 #app {
