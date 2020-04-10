@@ -9,7 +9,7 @@
           transition="scale-transition"
           width="40"
         />
-        <h1>Home</h1>
+        <h3>Home</h3>
       </v-btn>
     </div>
     <v-text-field
