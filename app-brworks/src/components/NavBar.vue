@@ -1,23 +1,35 @@
 <template>
-  <div id="navbar" class="row">
-    <div class="col-1-of-4">Home</div>
-    <div class="col-2-of-4">
-      <input id="searchbox" type="text" v-model="search" placeholder="Procurar pelo seu job.."/>
+  <v-app-bar app color="primary" dark>
+    <div class="d-flex align-center">
+      <v-btn class="shrink mr-2" href="#" text>
+        <v-img
+          alt="Vuetify Logo"
+          contain
+          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
+          transition="scale-transition"
+          width="40"
+        />
+        <h3>Home</h3>
+      </v-btn>
     </div>
-    <div class="col-1-of-4">Login</div>
-  </div>
+    <v-text-field
+      flat
+      solo-inverted
+      hide-details
+      prepend-inner-icon="mdi-magnify"
+      label="Search"
+      class="hidden-sm-and-down"
+    />
+
+    <v-btn href="#" text>
+      <span class="mr-2">Login</span>
+    </v-btn>
+  </v-app-bar>
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
-
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
-
-  
-
-</style>
+<style scoped lang="scss"></style>
