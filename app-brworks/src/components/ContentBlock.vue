@@ -1,11 +1,19 @@
 <template>
-  <div id="ContentBlock">
-      <h1>TESTE DE FUNCIONAMENTO</h1>
-  </div>
+  <v-container id="ContentBlock">
+    <card />
+    <card />    
+    <card />
+  </v-container>
 </template>
 
 <script>
+import Card from './Card.vue'
+
 export default {
+        name: 'contentblock',
+        components: {
+            Card
+        },
 
 }
 </script>
@@ -13,3 +21,5 @@ export default {
 <style>
 
 </style>
+
+
