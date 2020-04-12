@@ -1,14 +1,26 @@
 <template>
-  <v-card>
+  <v-card v-repeat="jobInfo" >
     <v-card-title>
-        Vaga 01
+        {{ title }}
     </v-card-title>
     <v-card-subtitle>
-        20$/hour
+        {{ price }}
     </v-card-subtitle>
-    <v-card-text>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam odio, faucibus vitae orci non, fringilla sagittis velit. Pellentesque consequat felis eu porttitor molestie. Donec laoreet felis at arcu varius ornare. Proin tempor augue id dui feugiat scelerisque. Duis sed vulputate lacus, convallis placerat odio. Integer at elit in justo egestas mollis non nec turpis. Sed nec metus lectus. Praesent gravida condimentum ligula ac malesuada. Donec sed consequat leo. In hac habitasse platea dictumst. Sed sem ligula, consequat ac convallis vel, faucibus vel lacus. Ut eu lorem semper, commodo justo a, rhoncus sem. Nullam ante elit, viverra sit amet diam id, vestibulum vulputate mauris.
-    </v-card-text>
+
+    <v-card-actions>
+      <v-btn icon @click="show = !show">
+        <v-icon>{{ show ? 'mdi-chevron-up-circle-outline' : 'mdi-chevron-down-circle-outline' }}</v-icon>
+      </v-btn>
+    </v-card-actions>
+
+     <v-expand-transition>
+      <div v-show="show">        
+        <v-divider/>
+        <v-card-text>
+          {{ textInfo }}
+        </v-card-text>
+      </div>
+    </v-expand-transition>
   </v-card>
 </template>
 
@@ -17,11 +29,16 @@
 
 export default {
         name: 'Card',
-        data: function() {
-            return {
-               
-            };
-        },
+          props: {
+            title: String,
+            price: String,
+            textInfo: String,
+
+          },
+          data: () => ({
+            show: false,
+
+        }),
         components: {
            
         },
