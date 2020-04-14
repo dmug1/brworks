@@ -1,0 +1,14 @@
+.cardStyle{
+    display: block;
+
+}
+
+.cardHolder{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+}
+.cardHolder:not(:first-child):not(:last-child) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+} 
