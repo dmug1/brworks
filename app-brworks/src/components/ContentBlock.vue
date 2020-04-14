@@ -27,6 +27,7 @@ export default {
               {id:6, title:'Limpar a vala',price:'$99,90', textInfo:' Lixar a tinta'},
             ]
         }),    
+
         components: {
             Card
         },

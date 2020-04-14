@@ -39,6 +39,7 @@ export default {
             show: false,
 
         }),
+
         components: {
            
         },
