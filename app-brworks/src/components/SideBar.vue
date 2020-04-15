@@ -1,9 +1,7 @@
 <template>
-  <div id="SideBar">
+  <v-navigation-drawer>
     <v-card color=" lighten-2">
-      <v-card-title class="headline lighten-3">
-        Filtros
-      </v-card-title>
+      <v-card-title class="headline lighten-3">Filtros</v-card-title>
 
       <v-card-text>
         <v-autocomplete
@@ -37,17 +35,13 @@
 
       <v-card-actions>
         <v-spacer></v-spacer>
-        <v-btn
-          :disabled="!cidade"
-          color="grey darken-3"
-          @click="(cidade = null), (servico = null)"
-        >
+        <v-btn :disabled="!cidade" color="grey darken-3" @click="(cidade = null), (servico = null)">
           Limpar
           <v-icon right>mdi-close-circle</v-icon>
         </v-btn>
       </v-card-actions>
     </v-card>
-  </div>
+  </v-navigation-drawer>
 </template>
 
 <script>
