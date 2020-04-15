@@ -1,5 +1,5 @@
 <template>
-  <v-navigation-drawer>
+  <v-navigation-drawer app>
     <v-card color=" lighten-2">
       <v-card-title class="headline lighten-3">Filtros</v-card-title>
 

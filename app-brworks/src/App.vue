@@ -3,15 +3,15 @@
     <NavBar />
     <SideBar />
     <v-content>
-      <MainBlock />
+      <ContentBlock />
     </v-content>
   </v-app>
 </template>
 
 <script>
 import NavBar from "./components/NavBar.vue";
-import MainBlock from "./components/MainBlock.vue";
 import SideBar from "./components/SideBar.vue";
+import ContentBlock from "./components/ContentBlock.vue";
 
 export default {
   name: "App",
@@ -19,7 +19,7 @@ export default {
   components: {
     NavBar,
     SideBar,
-    MainBlock
+    ContentBlock
   },
 
   data: () => ({
